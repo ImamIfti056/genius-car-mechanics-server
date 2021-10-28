@@ -68,5 +68,8 @@ run().catch(console.dir);
 app.get('/', (req, res)=>{
     res.send('Running my Genius Car CRUD server');
 })
+app.get('/hello', (req, res)=>{
+    res.send('Hello updated here');
+})
 
 app.listen(port, () => console.log("Running Genius on port: ", port));
